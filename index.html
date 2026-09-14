@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartamento no Córrego Grande</title>
+<meta name="description" content="Apartamento de 106,89 m² totalmente reformado no Córrego Grande, Florianópolis. 4 quartos (2 suítes), varanda com churrasqueira, 2 vagas. R$ 1.500.000.">
+<meta property="og:title" content="Apartamento no Córrego Grande — 4 quartos, 106,89 m², reformado">
+<meta property="og:description" content="Totalmente reformado, sala integrada à varanda com churrasqueira, 2 vagas e carregador para carro elétrico. R$ 1.500.000.">
+<meta property="og:image" content="fotos/foto-27.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#FBF9F4;
+  --paper-2:#F1EDE3;
+  --ink:#1F2A22;
+  --ink-2:#4A554C;
+  --ink-3:#7C857D;
+  --line:#DDD6C8;
+  --sage:#5E7A5A;
+  --sage-deep:#3F5A3D;
+  --sage-soft:#E4EBDF;
+  --oak:#C9A86E;
+  --clay:#C4572F;
+  --wa:#1E8F4E;
+  --radius:10px;
+  --font-display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --font-body:"Figtree","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.01em}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+@media (max-width:520px){.wrap{width:min(1120px,100% - 32px)}}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sage-deep)}
+.tab{font-variant-numeric:tabular-nums}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.brand{font-family:var(--font-display);font-weight:800;font-size:1.05rem;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand i{width:10px;height:10px;border-radius:50%;background:var(--oak);display:inline-block}
+.nav-links{display:flex;gap:22px;font-size:.92rem;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--ink-2)}
+.nav-links a:hover{color:var(--ink)}
+@media (max-width:760px){.nav-links{display:none}}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.95rem;border:1px solid transparent;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--oak);outline-offset:3px}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#177a41}
+.btn-wa svg{width:20px;height:20px;fill:currentColor}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{background:var(--paper-2)}
+.nav .btn{padding:9px 16px;font-size:.88rem;white-space:nowrap}
+
+/* ---------- hero ---------- */
+.hero{padding-block:36px 0}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);gap:32px;align-items:end}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr;gap:24px}}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4.4rem);font-weight:800;margin-top:14px}
+.hero h1 em{font-style:normal;color:var(--sage)}
+.hero p.lead{font-size:1.12rem;color:var(--ink-2);max-width:34ch;margin:18px 0 26px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero-photo{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/3;max-width:100%;box-shadow:0 30px 60px -30px rgba(31,42,34,.45)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo figcaption{position:absolute;left:16px;bottom:16px;background:rgba(251,249,244,.92);padding:8px 14px;border-radius:999px;font-size:.82rem;font-weight:500;color:var(--ink-2)}
+
+/* ---------- specs strip ---------- */
+.specs{margin-top:36px;border-block:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr)}
+.specs > div{padding:22px 18px;border-right:1px solid var(--line)}
+.specs > div:last-child{border-right:0}
+.specs b{display:block;font-family:var(--font-display);font-size:1.9rem;font-weight:700;line-height:1;letter-spacing:-.02em}
+.specs b small{font-size:.9rem;font-weight:600;color:var(--ink-3);margin-left:2px}
+.specs span{display:block;color:var(--ink-3);font-size:.85rem;margin-top:6px}
+.specs .price b{color:var(--sage-deep)}
+@media (max-width:860px){.specs{grid-template-columns:repeat(3,1fr)}.specs > div:nth-child(3){border-right:0}.specs > div:nth-child(n+4){border-top:1px solid var(--line)}}
+@media (max-width:520px){.specs{grid-template-columns:repeat(2,1fr)}.specs > div{border-right:0}.specs > div:nth-child(odd){border-right:1px solid var(--line)}.specs > div:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* ---------- sections ---------- */
+section{padding-block:72px}
+@media (max-width:760px){section{padding-block:52px}}
+.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:24px 48px;align-items:start;margin-bottom:40px}
+.section-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:700;margin-top:10px}
+.section-head p{margin:0;color:var(--ink-2);max-width:62ch;font-size:1.05rem}
+@media (max-width:860px){.section-head{grid-template-columns:1fr;gap:12px}}
+
+/* about */
+.about{background:var(--paper-2)}
+.feature-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media (max-width:860px){.feature-groups{grid-template-columns:1fr}}
+.group h3{font-size:1.15rem;font-weight:700;padding-bottom:12px;border-bottom:2px solid var(--ink);margin-bottom:6px}
+.group ul{list-style:none;margin:0;padding:0}
+.group li{padding:12px 0 12px 26px;border-bottom:1px solid var(--line);position:relative;color:var(--ink-2);font-size:.97rem}
+.group li::before{content:"";position:absolute;left:2px;top:20px;width:12px;height:6px;border-left:2px solid var(--sage);border-bottom:2px solid var(--sage);transform:rotate(-45deg)}
+.group li b{color:var(--ink);font-weight:600}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--sage-soft);color:var(--sage-deep);vertical-align:middle;margin-left:6px}
+.pill.clay{background:#F6E1D7;color:#8E3A1A}
+
+/* gallery */
+.gallery-nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.gallery-nav button{font:inherit;font-size:.9rem;font-weight:500;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer}
+.gallery-nav button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media (max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:8px}}
+.grid figure{margin:0;position:relative;aspect-ratio:3/4;border-radius:var(--radius);overflow:hidden;background:var(--paper-2);cursor:zoom-in}
+.grid figure.wide{grid-column:span 2;aspect-ratio:3/2}
+@media (max-width:640px){.grid figure.wide{aspect-ratio:4/3}}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.grid figure:hover img{transform:scale(1.03)}
+.grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 12px 10px;font-size:.8rem;color:#fff;background:linear-gradient(to top,rgba(20,26,22,.75),transparent);pointer-events:none}
+.grid figure[hidden]{display:none}
+
+/* costs */
+.costs .cards{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:16px}
+@media (max-width:860px){.costs .cards{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;background:#fff}
+.card.primary{background:var(--sage-deep);color:#fff;border-color:var(--sage-deep)}
+.card .eyebrow{color:inherit;opacity:.75}
+.card b{display:block;font-family:var(--font-display);font-size:2.2rem;font-weight:700;letter-spacing:-.02em;margin:14px 0 6px;line-height:1}
+.card b small{font-size:1rem;font-weight:600;opacity:.7}
+.card p{margin:0;font-size:.92rem;opacity:.85}
+.note{margin-top:16px;font-size:.88rem;color:var(--ink-3)}
+
+/* location */
+.location{background:var(--paper-2)}
+.loc-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+@media (max-width:860px){.loc-grid{grid-template-columns:1fr}}
+.loc-grid p{color:var(--ink-2);max-width:60ch}
+.loc-photo{border-radius:16px;overflow:hidden;aspect-ratio:3/4;max-width:100%}
+.loc-photo img{width:100%;height:100%;object-fit:cover}
+
+/* contact */
+.contact{text-align:left}
+.contact-box{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center;border:1px solid var(--line);border-radius:20px;padding:44px;background:#fff}
+@media (max-width:860px){.contact-box{grid-template-columns:1fr;padding:28px}}
+.contact h2{font-size:clamp(1.9rem,3.6vw,2.8rem);font-weight:800}
+.contact p{color:var(--ink-2);max-width:48ch}
+.contact .btn{font-size:1.05rem;padding:16px 26px}
+.contact .num{margin-top:14px;font-size:.95rem;color:var(--ink-3)}
+footer{padding:28px 0 40px;font-size:.85rem;color:var(--ink-3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(18,22,19,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+.lb.open{display:flex}
+.lb img{max-width:min(96vw,1100px);max-height:86vh;object-fit:contain;border-radius:6px}
+.lb .cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#fff;font-size:.9rem;opacity:.85}
+.lb button{position:absolute;background:rgba(255,255,255,.1);border:0;color:#fff;font:inherit;font-size:1.6rem;width:48px;height:48px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.lb button:hover{background:rgba(255,255,255,.22)}
+.lb .close{top:16px;right:16px}
+.lb .prev{left:16px;top:50%;transform:translateY(-50%)}
+.lb .next{right:16px;top:50%;transform:translateY(-50%)}
+@media (max-width:640px){.lb .prev,.lb .next{top:auto;bottom:60px;transform:none}}
+
+/* floating whatsapp on mobile */
+.fab{display:none;position:fixed;right:16px;bottom:16px;z-index:30;width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.fab svg{width:28px;height:28px;fill:currentColor}
+@media (max-width:760px){.fab{display:grid}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#"><i></i>Córrego Grande · 106,89 m²</a>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="#sobre">O apartamento</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#valores">Valores</a>
+      <a href="#local">Localização</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/5548999999353?text=Ol%C3%A1!%20Tenho%20interesse%20no%20apartamento%20no%20C%C3%B3rrego%20Grande%20e%20gostaria%20de%20agendar%20uma%20visita." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3Z"/></svg>
+      Agendar visita
+    </a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="topo">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Córrego Grande · Florianópolis</div>
+        <h1>Reformado por inteiro, <em>pronto para morar.</em></h1>
+        <p class="lead">106,89 m² com 4 quartos, duas suítes e uma sala ampla que se abre para a varanda com churrasqueira. Tudo novo — do piso às maçanetas.</p>
+        <div class="hero-cta">
+          <a class="btn btn-wa" href="https://wa.me/5548999999353?text=Ol%C3%A1!%20Tenho%20interesse%20no%20apartamento%20no%20C%C3%B3rrego%20Grande%20e%20gostaria%20de%20agendar%20uma%20visita." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3Z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#fotos">Ver as fotos</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="fotos/foto-27.jpg" alt="Sala de estar ampla, com sofá, painel de TV e porta para a varanda" fetchpriority="high">
+        <figcaption>Sala de estar integrada à varanda</figcaption>
+      </figure>
+    </div>
+
+    <div class="specs tab">
+      <div class="price"><b>R$ 1,5<small>mi</small></b><span>Valor de venda</span></div>
+      <div><b>106,89<small>m²</small></b><span>Área privativa</span></div>
+      <div><b>4</b><span>Quartos, 2 suítes</span></div>
+      <div><b>2</b><span>Vagas na garagem</span></div>
+      <div><b>3</b><span>Banheiros</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">O apartamento</div>
+        <h2>Uma reforma completa, feita para quem vai morar</h2>
+      </div>
+      <p>Apartamento de 106,89 m² totalmente reformado no Córrego Grande. A sala ampla para dois ambientes se integra à cozinha e à varanda, fechada com sistema Reiki, onde a churrasqueira com exaustão fica invisível sob a cobertura quando não está em uso. Piso vinílico em todo o apartamento e porcelanato nas áreas molhadas; armários sob medida na cozinha, na área de serviço e nos quartos.</p>
+    </div>
+
+    <div class="feature-groups">
+      <div class="group">
+        <h3>Ambientes</h3>
+        <ul>
+          <li><b>4 quartos</b>, sendo duas suítes</li>
+          <li><b>Banheiro social</b> além dos banheiros das suítes</li>
+          <li><b>Sala ampla</b> para dois ambientes, integrada à cozinha e à varanda</li>
+          <li><b>Varanda fechada</b> com sistema Reiki</li>
+          <li><b>Churrasqueira</b> na varanda com exaustão e cobertura retrátil</li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Acabamentos</h3>
+        <ul>
+          <li><b>Armários sob medida</b> na cozinha, área de serviço e quartos</li>
+          <li><b>Banheiros novos</b>: revestimentos, metais e móveis</li>
+          <li><b>Portas, batentes, maçanetas e rodapés</b> trocados há poucos meses</li>
+          <li><b>Piso vinílico</b> em todo o apartamento</li>
+          <li><b>Porcelanato</b> nas áreas molhadas</li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Condomínio e garagem</h3>
+        <ul>
+          <li><b>2 vagas</b> na garagem</li>
+          <li><b>Carregador para carro elétrico</b> na vaga compartilhada, com energia cobrada no boleto do condomínio</li>
+          <li><b>Salão de festas</b> completo</li>
+          <li><b>Bicicletário</b></li>
+          <li><b>Hobby box</b> <span class="pill clay">projeto em andamento</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fotos">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Fotos</div>
+        <h2>Cada ambiente, de perto</h2>
+      </div>
+      <p>Clique em qualquer foto para ampliar. Use os filtros para ver um ambiente por vez.</p>
+    </div>
+
+    <div class="gallery-nav" role="group" aria-label="Filtrar fotos por ambiente">
+      <button type="button" data-filter="all" aria-pressed="true">Todas</button>
+      <button type="button" data-filter="sala" aria-pressed="false">Sala e varanda</button>
+      <button type="button" data-filter="cozinha" aria-pressed="false">Cozinha e área de serviço</button>
+      <button type="button" data-filter="suite" aria-pressed="false">Suíte principal</button>
+      <button type="button" data-filter="quartos" aria-pressed="false">Quartos</button>
+      <button type="button" data-filter="banheiros" aria-pressed="false">Banheiros</button>
+    </div>
+
+    <div class="grid" id="grid">
+      <figure class="wide" data-g="sala"><img loading="lazy" src="fotos/foto-26.jpg" alt="Sala integrada à cozinha com bancada"><figcaption>Sala integrada à cozinha</figcaption></figure>
+      <figure data-g="sala"><img loading="lazy" src="fotos/foto-24.jpg" alt="Sala de jantar com mesa redonda"><figcaption>Sala de jantar</figcaption></figure>
+      <figure data-g="sala"><img loading="lazy" src="fotos/foto-25.jpg" alt="Bancada e mesa de jantar"><figcaption>Bancada e sala de jantar</figcaption></figure>
+      <figure data-g="sala"><img loading="lazy" src="fotos/foto-20.jpg" alt="Varanda envidraçada com vista para o bairro"><figcaption>Varanda com vista</figcaption></figure>
+      <figure data-g="sala"><img loading="lazy" src="fotos/foto-21.jpg" alt="Varanda com churrasqueira embutida"><figcaption>Churrasqueira na varanda</figcaption></figure>
+      <figure data-g="cozinha"><img loading="lazy" src="fotos/foto-22.jpg" alt="Cozinha com geladeira, fogão e armários"><figcaption>Cozinha</figcaption></figure>
+      <figure data-g="cozinha"><img loading="lazy" src="fotos/foto-23.jpg" alt="Cozinha com armários sob medida e bancada"><figcaption>Armários sob medida</figcaption></figure>
+      <figure data-g="cozinha"><img loading="lazy" src="fotos/foto-28.jpg" alt="Área de serviço com máquina de lavar, tanque e armários sob medida"><figcaption>Área de serviço</figcaption></figure>
+      <figure data-g="cozinha"><img loading="lazy" src="fotos/foto-29.jpg" alt="Área de serviço com armários sob medida e janela com vista"><figcaption>Área de serviço · armários</figcaption></figure>
+      <figure data-g="cozinha"><img loading="lazy" src="fotos/foto-19.jpg" alt="Circulação entre a sala e os quartos"><figcaption>Circulação</figcaption></figure>
+      <figure data-g="suite"><img loading="lazy" src="fotos/foto-15.jpg" alt="Suíte principal com cama de casal e janela"><figcaption>Suíte principal</figcaption></figure>
+      <figure data-g="suite"><img loading="lazy" src="fotos/foto-14.jpg" alt="Armários sob medida na suíte principal"><figcaption>Suíte principal · armários</figcaption></figure>
+      <figure data-g="suite"><img loading="lazy" src="fotos/foto-13.jpg" alt="Painel de TV na suíte principal"><figcaption>Suíte principal · painel de TV</figcaption></figure>
+      <figure data-g="suite"><img loading="lazy" src="fotos/foto-16.jpg" alt="Entrada da suíte principal"><figcaption>Suíte principal · entrada</figcaption></figure>
+      <figure data-g="suite banheiros"><img loading="lazy" src="fotos/foto-17.jpg" alt="Banheiro da suíte com armário azul e espelho"><figcaption>Banheiro da suíte</figcaption></figure>
+      <figure data-g="suite banheiros"><img loading="lazy" src="fotos/foto-18.jpg" alt="Banheiro da suíte com box e janela"><figcaption>Banheiro da suíte</figcaption></figure>
+      <figure data-g="quartos"><img loading="lazy" src="fotos/foto-02.jpg" alt="Quarto com cama e armários sob medida"><figcaption>Segunda suíte</figcaption></figure>
+      <figure data-g="quartos"><img loading="lazy" src="fotos/foto-03.jpg" alt="Quarto com armário e janela"><figcaption>Segunda suíte · armários</figcaption></figure>
+      <figure data-g="quartos"><img loading="lazy" src="fotos/foto-04.jpg" alt="Armários sob medida do quarto"><figcaption>Armários sob medida</figcaption></figure>
+      <figure data-g="quartos"><img loading="lazy" src="fotos/foto-09.jpg" alt="Quarto infantil com beliche"><figcaption>Quarto infantil</figcaption></figure>
+      <figure data-g="quartos"><img loading="lazy" src="fotos/foto-08.jpg" alt="Quarto infantil com poltrona e papel de parede"><figcaption>Quarto infantil</figcaption></figure>
+      <figure data-g="quartos"><img loading="lazy" src="fotos/foto-10.jpg" alt="Entrada do quarto infantil com armários"><figcaption>Quarto infantil · armários</figcaption></figure>
+      <figure data-g="quartos"><img loading="lazy" src="fotos/foto-00.jpg" alt="Home office com escrivaninha e prateleiras"><figcaption>Home office</figcaption></figure>
+      <figure data-g="quartos"><img loading="lazy" src="fotos/foto-01.jpg" alt="Home office com vista para a janela"><figcaption>Home office</figcaption></figure>
+      <figure data-g="banheiros"><img loading="lazy" src="fotos/foto-06.jpg" alt="Banheiro social com espelho oval e porta laranja"><figcaption>Banheiro social</figcaption></figure>
+      <figure data-g="banheiros"><img loading="lazy" src="fotos/foto-07.jpg" alt="Banheiro social com box e revestimento colorido"><figcaption>Banheiro social</figcaption></figure>
+      <figure data-g="banheiros"><img loading="lazy" src="fotos/foto-11.jpg" alt="Banheiro da segunda suíte com espelho redondo"><figcaption>Banheiro da segunda suíte</figcaption></figure>
+      <figure data-g="banheiros"><img loading="lazy" src="fotos/foto-12.jpg" alt="Banheiro da segunda suíte com box e janela"><figcaption>Banheiro da segunda suíte</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="costs" id="valores">
+  <div class="wrap">
+    <div class="eyebrow" style="margin-bottom:22px">Valores</div>
+    <div class="cards tab">
+      <div class="card primary">
+        <div class="eyebrow">Valor de venda</div>
+        <b>R$ 1.500.000</b>
+        <p>Apartamento reformado, com armários sob medida e 2 vagas.</p>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Condomínio</div>
+        <b>R$ 738<small>/mês</small></b>
+        <p>Inclui salão de festas, bicicletário e vaga com carregador elétrico.</p>
+      </div>
+      <div class="card">
+        <div class="eyebrow">IPTU</div>
+        <b>R$ 2.067,90<small>/ano</small></b>
+        <p>Cerca de R$ 172 por mês.</p>
+      </div>
+    </div>
+    <p class="note">A energia usada no carregador de veículo elétrico é cobrada no próprio boleto do condomínio, conforme o consumo.</p>
+  </div>
+</section>
+
+<section class="location" id="local">
+  <div class="wrap">
+    <div class="loc-grid">
+      <div>
+        <div class="eyebrow">Localização</div>
+        <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:700;margin:10px 0 18px">Córrego Grande, perto do verde e de tudo</h2>
+        <p>Um dos bairros mais arborizados de Florianópolis, o Córrego Grande combina tranquilidade residencial com acesso rápido à UFSC, ao centro e às praias do leste da ilha. Da varanda, a vista alcança as encostas verdes que cercam o bairro.</p>
+        <p>Uma ótima oportunidade para quem busca qualidade de vida, proximidade a áreas verdes e fácil acesso aos principais pontos do bairro.</p>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=C%C3%B3rrego+Grande%2C+Florian%C3%B3polis+-+SC" target="_blank" rel="noopener">Abrir o bairro no Google Maps</a>
+      </div>
+      <figure class="loc-photo"><img loading="lazy" src="fotos/foto-20.jpg" alt="Vista da varanda para as encostas verdes do Córrego Grande"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contato">
+  <div class="wrap">
+    <div class="contact-box">
+      <div>
+        <div class="eyebrow">Agende uma visita</div>
+        <h2>Venha conhecer pessoalmente.</h2>
+        <p>Entre em contato pelo WhatsApp para tirar dúvidas, pedir mais informações ou marcar um horário para visitar o apartamento.</p>
+      </div>
+      <div>
+        <a class="btn btn-wa" href="https://wa.me/5548999999353?text=Ol%C3%A1!%20Tenho%20interesse%20no%20apartamento%20no%20C%C3%B3rrego%20Grande%20e%20gostaria%20de%20agendar%20uma%20visita." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3Z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <div class="num tab">(48) 99999-9353</div>
+      </div>
+    </div>
+    <footer>
+      <span>Apartamento no Córrego Grande · Florianópolis, SC</span>
+      <span>Venda direta com o proprietário</span>
+    </footer>
+  </div>
+</section>
+</main>
+
+<a class="fab" href="https://wa.me/5548999999353?text=Ol%C3%A1!%20Tenho%20interesse%20no%20apartamento%20no%20C%C3%B3rrego%20Grande%20e%20gostaria%20de%20agendar%20uma%20visita." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3Z"/></svg>
+</a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button type="button" class="close" aria-label="Fechar">×</button>
+  <button type="button" class="prev" aria-label="Foto anterior">‹</button>
+  <img id="lb-img" src="" alt="">
+  <button type="button" class="next" aria-label="Próxima foto">›</button>
+  <div class="cap" id="lb-cap"></div>
+</div>
+
+<script>
+(function(){
+  var grid=document.getElementById('grid');
+  var figs=Array.prototype.slice.call(grid.querySelectorAll('figure'));
+  var buttons=document.querySelectorAll('.gallery-nav button');
+  var current='all';
+  function visible(){return figs.filter(function(f){return !f.hidden;});}
+  buttons.forEach(function(b){
+    b.addEventListener('click',function(){
+      current=b.getAttribute('data-filter');
+      buttons.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+      figs.forEach(function(f){
+        var groups=f.getAttribute('data-g').split(' ');
+        f.hidden=!(current==='all'||groups.indexOf(current)>-1);
+      });
+    });
+  });
+
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lb-img'),lbCap=document.getElementById('lb-cap');
+  var list=[],idx=0;
+  function show(i){
+    list=visible(); if(!list.length)return;
+    idx=(i+list.length)%list.length;
+    var img=list[idx].querySelector('img'),cap=list[idx].querySelector('figcaption');
+    lbImg.src=img.getAttribute('src'); lbImg.alt=img.alt; lbCap.textContent=cap?cap.textContent:'';
+    lb.classList.add('open'); document.body.style.overflow='hidden';
+  }
+  function close(){lb.classList.remove('open');document.body.style.overflow='';}
+  figs.forEach(function(f){f.addEventListener('click',function(){show(visible().indexOf(f));});});
+  lb.querySelector('.close').addEventListener('click',close);
+  lb.querySelector('.prev').addEventListener('click',function(){show(idx-1);});
+  lb.querySelector('.next').addEventListener('click',function(){show(idx+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape')close(); else if(e.key==='ArrowLeft')show(idx-1); else if(e.key==='ArrowRight')show(idx+1);
+  });
+  var sx=0;
+  lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+  lb.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(dx<0?idx+1:idx-1);});
+})();
+</script>
+</body>
+</html>
